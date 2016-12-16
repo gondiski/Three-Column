@@ -1,0 +1,69 @@
+/*CSS reset for browser margins and paddings*/
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	display: flex;
+}
+
+.container-1{
+	width: 20%;
+	display: flex;
+	order: 1;
+	align-items: stretch;
+	flex-wrap: wrap;
+	border-right: 1px solid #ccc;
+}
+
+.container-2{
+	width: 80%;
+	display: flex;
+	order: 2;
+	flex-flow: column;
+	justify-content: center;
+	height: 100vh;
+}
+
+.box-2{
+	width: 100%;
+	height: 50%;
+	border-bottom: 1px dotted #ccc;
+	background-color: orange;
+}
+
+.box-3{
+	width: 100%;
+	height:50%;
+	background-color: #222;
+	color:#fff;
+}
+article{
+	padding:10%;
+}
+
+article h1{
+	font-weight: 400;
+	font-size: 2.2rem;
+	font-family: 'Quicksand', cursive;
+	letter-spacing: 2px;
+}
+article p{
+	font-weight: : 700;
+	font-size: 1.2rem;
+	font-family:'Quicksand', sans-serif;
+	letter-spacing: 1px;
+}
+
+@media (max-width: 600px){
+	body{
+		flex-direction: column;
+		height: 100vh;
+	}
+	.container-1, .container-2{
+		width: 100%;
+	}
+	.article{
+		padding:5px;
+	}
+}
